@@ -18,10 +18,10 @@ export default function Home() {
 
 function HomeContent() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center w-full overflow-x-hidden bg-[#000510]">
+    <div className="relative flex min-h-screen flex-col items-center w-full overflow-x-hidden bg-background">
 
       {/* Liquid Ether Background Fixed Layer */}
-      <div className="fixed inset-0 z-0 w-full h-full pointer-events-none">
+      <div className="fixed inset-0 z-0 w-full h-full pointer-events-none hidden dark:block">
         <LiquidEther
           colors={['#050E3C', '#002455', '#B19EEF']}
           mouseForce={20}

@@ -1,0 +1,433 @@
+﻿
+> regulationkit@0.1.0 lint
+> eslint
+
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\layout\Navbar.tsx
+  48:80  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  72:79  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\sections\Calculator.tsx
+  5:47  warning  'Loader2' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\sections\Features.tsx
+   3:10  warning  'motion' is defined but never used                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+  74:53  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\sections\Pricing.tsx
+  37:55  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\sections\Services.tsx
+  36:45  warning  'index' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\sections\product\ProductHero.tsx
+  14:13  warning  'language' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\sections\product\ProductProcess.tsx
+  5:10  warning  'Star' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\sections\product\TechnicalSpecs.tsx
+  3:10  warning  'motion' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\3d-card.tsx
+   38:31  warning  'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+   43:31  warning  'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+  119:20  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-explicit-any
+  125:9   error    Error: Cannot access variable before it is declared
+
+`handleAnimations` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\3d-card.tsx:125:9
+  123 |
+  124 |     useEffect(() => {
+> 125 |         handleAnimations();
+      |         ^^^^^^^^^^^^^^^^ `handleAnimations` accessed before it is declared
+  126 |     }, [isMouseEntered]);
+  127 |
+  128 |     const handleAnimations = () => {
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\3d-card.tsx:128:5
+  126 |     }, [isMouseEntered]);
+  127 |
+> 128 |     const handleAnimations = () => {
+      |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 129 |         if (!ref.current) return;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 130 |         if (isMouseEntered) {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 131 |             ref.current.style.transform = `translateX(${translateX}px) translateY(${translateY}px) translateZ(${translateZ}px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg)`;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 132 |         } else {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 133 |             ref.current.style.transform = `translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)`;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 134 |         }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 135 |     };
+      | ^^^^^^^ `handleAnimations` is declared here
+  136 |
+  137 |     return (
+  138 |         <Tag  react-hooks/immutability
+  126:8   warning  React Hook useEffect has a missing dependency: 'handleAnimations'. Either include it or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 react-hooks/exhaustive-deps
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\DotGrid.tsx
+   21:35  error    Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+   23:28  error    Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+   23:42  error    Unexpected any. Specify a different type                               @typescript-eslint/no-explicit-any
+  196:13  warning  Expected an assignment or function call and instead saw an expression  @typescript-eslint/no-unused-expressions
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\LiquidEther.tsx
+   122:9   warning  Compilation Skipped: Inline `class` declarations are not supported
+
+Move class declarations outside of components/hooks.
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\LiquidEther.tsx:122:9
+  120 |         const bgVec4 = new THREE.Vector4(0, 0, 0, 0);
+  121 |
+> 122 |         class CommonClass {
+      |         ^^^^^^^^^^^^^^^^^^^
+> 123 |             width = 0;
+      | ^^^^^^^^^^^^^^^^^^^^^^
+> 124 |             height = 0;
+      Γאª
+      | ^^^^^^^^^^^^^^^^^^^^^^
+> 165 |             }
+      | ^^^^^^^^^^^^^^^^^^^^^^
+> 166 |         }
+      | ^^^^^^^^^^ Inline `class` declarations are not supported
+  167 |         const Common = new CommonClass();
+  168 |
+  169 |         class MouseClass {
+
+                                                                                            react-hooks/unsupported-syntax
+   169:9   warning  Compilation Skipped: Inline `class` declarations are not supported
+
+Move class declarations outside of components/hooks.
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\LiquidEther.tsx:169:9
+  167 |         const Common = new CommonClass();
+  168 |
+> 169 |         class MouseClass {
+      |         ^^^^^^^^^^^^^^^^^^
+> 170 |             mouseMoved = false;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 171 |             coords = new THREE.Vector2();
+      Γאª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 307 |             }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 308 |         }
+      | ^^^^^^^^^^ Inline `class` declarations are not supported
+  309 |         const Mouse = new MouseClass();
+  310 |
+  311 |         class AutoDriver {
+
+                                                      react-hooks/unsupported-syntax
+   311:9   warning  Compilation Skipped: Inline `class` declarations are not supported
+
+Move class declarations outside of components/hooks.
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\LiquidEther.tsx:311:9
+  309 |         const Mouse = new MouseClass();
+  310 |
+> 311 |         class AutoDriver {
+      |         ^^^^^^^^^^^^^^^^^^
+> 312 |             mouse: MouseClass;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 313 |             manager: WebGLManager;
+      Γאª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 385 |             }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 386 |         }
+      | ^^^^^^^^^^ Inline `class` declarations are not supported
+  387 |
+  388 |         const face_vert = `
+  389 | 	attribute vec3 position;
+
+                                                                                react-hooks/unsupported-syntax
+   559:49  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   561:9   warning  Compilation Skipped: Inline `class` declarations are not supported
+
+Move class declarations outside of components/hooks.
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\LiquidEther.tsx:561:9
+  559 |         type Uniforms = Record<string, { value: any }>;
+  560 |
+> 561 |         class ShaderPass {
+      |         ^^^^^^^^^^^^^^^^^^
+> 562 |             props: any;
+      | ^^^^^^^^^^^^^^^^^^^^^^^
+> 563 |             uniforms?: Uniforms;
+      Γאª
+      | ^^^^^^^^^^^^^^^^^^^^^^^
+> 588 |             }
+      | ^^^^^^^^^^^^^^^^^^^^^^^
+> 589 |         }
+      | ^^^^^^^^^^ Inline `class` declarations are not supported
+  590 |
+  591 |         class Advection extends ShaderPass {
+  592 |             line!: THREE.LineSegments;
+
+                                                                react-hooks/unsupported-syntax
+   562:20  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   569:32  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   573:21  warning  '_args' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+   573:28  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   583:23  warning  '_args' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-unused-vars
+   583:30  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   591:9   warning  Compilation Skipped: Inline `class` declarations are not supported
+
+Move class declarations outside of components/hooks.
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\LiquidEther.tsx:591:9
+  589 |         }
+  590 |
+> 591 |         class Advection extends ShaderPass {
+      |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 592 |             line!: THREE.LineSegments;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 593 |             constructor(simProps: any) {
+      Γאª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 637 |             }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 638 |         }
+      | ^^^^^^^^^^ Inline `class` declarations are not supported
+  639 |
+  640 |         class ExternalForce extends ShaderPass {
+  641 |             mouse!: THREE.Mesh;
+
+         react-hooks/unsupported-syntax
+   593:35  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   630:29  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   640:9   warning  Compilation Skipped: Inline `class` declarations are not supported
+
+Move class declarations outside of components/hooks.
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\LiquidEther.tsx:640:9
+  638 |         }
+  639 |
+> 640 |         class ExternalForce extends ShaderPass {
+      |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 641 |             mouse!: THREE.Mesh;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 642 |             constructor(simProps: any) {
+      Γאª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 685 |             }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 686 |         }
+      | ^^^^^^^^^^ Inline `class` declarations are not supported
+  687 |
+  688 |         class Viscous extends ShaderPass {
+  689 |             constructor(simProps: any) {
+
+                          react-hooks/unsupported-syntax
+   642:35  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   646:28  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   664:29  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   688:9   warning  Compilation Skipped: Inline `class` declarations are not supported
+
+Move class declarations outside of components/hooks.
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\LiquidEther.tsx:688:9
+  686 |         }
+  687 |
+> 688 |         class Viscous extends ShaderPass {
+      |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 689 |             constructor(simProps: any) {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 690 |                 super({
+      Γאª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 729 |             }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 730 |         }
+      | ^^^^^^^^^^ Inline `class` declarations are not supported
+  731 |
+  732 |         class Divergence extends ShaderPass {
+  733 |             constructor(simProps: any) {
+
+                react-hooks/unsupported-syntax
+   689:35  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   709:29  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   712:29  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   712:43  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   732:9   warning  Compilation Skipped: Inline `class` declarations are not supported
+
+Move class declarations outside of components/hooks.
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\LiquidEther.tsx:732:9
+  730 |         }
+  731 |
+> 732 |         class Divergence extends ShaderPass {
+      |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 733 |             constructor(simProps: any) {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 734 |                 super({
+      Γאª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 755 |             }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 756 |         }
+      | ^^^^^^^^^^ Inline `class` declarations are not supported
+  757 |
+  758 |         class Poisson extends ShaderPass {
+  759 |             constructor(simProps: any) {
+
+             react-hooks/unsupported-syntax
+   733:35  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   749:29  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   750:60  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   758:9   warning  Compilation Skipped: Inline `class` declarations are not supported
+
+Move class declarations outside of components/hooks.
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\LiquidEther.tsx:758:9
+  756 |         }
+  757 |
+> 758 |         class Poisson extends ShaderPass {
+      |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 759 |             constructor(simProps: any) {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 760 |                 super({
+      Γאª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 794 |             }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 795 |         }
+      | ^^^^^^^^^^ Inline `class` declarations are not supported
+  796 |
+  797 |         class Pressure extends ShaderPass {
+  798 |             constructor(simProps: any) {
+
+                  react-hooks/unsupported-syntax
+   759:35  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   777:29  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   779:27  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   779:39  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   797:9   warning  Compilation Skipped: Inline `class` declarations are not supported
+
+Move class declarations outside of components/hooks.
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\LiquidEther.tsx:797:9
+  795 |         }
+  796 |
+> 797 |         class Pressure extends ShaderPass {
+      |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 798 |             constructor(simProps: any) {
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 799 |                 super({
+      Γאª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 822 |             }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 823 |         }
+      | ^^^^^^^^^^ Inline `class` declarations are not supported
+  824 |
+  825 |         class Simulation {
+  826 |             options: SimOptions;
+
+                                         react-hooks/unsupported-syntax
+   798:35  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   815:29  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   816:70  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   816:86  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   825:9   warning  Compilation Skipped: Inline `class` declarations are not supported
+
+Move class declarations outside of components/hooks.
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\LiquidEther.tsx:825:9
+  823 |         }
+  824 |
+> 825 |         class Simulation {
+      |         ^^^^^^^^^^^^^^^^^^
+> 826 |             options: SimOptions;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 827 |             fbos: Record<string, THREE.WebGLRenderTarget | null> = {
+      Γאª
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 962 |             }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 963 |         }
+      | ^^^^^^^^^^ Inline `class` declarations are not supported
+  964 |
+  965 |         class Output {
+  966 |             simulation: Simulation;
+
+                                                               react-hooks/unsupported-syntax
+   951:26  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+   965:9   warning  Compilation Skipped: Inline `class` declarations are not supported
+
+Move class declarations outside of components/hooks.
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\LiquidEther.tsx:965:9
+   963 |         }
+   964 |
+>  965 |         class Output {
+       |         ^^^^^^^^^^^^^^
+>  966 |             simulation: Simulation;
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+>  967 |             scene: THREE.Scene;
+       Γאª
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 1002 |             }
+       | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 1003 |         }
+       | ^^^^^^^^^^ Inline `class` declarations are not supported
+  1004 |
+  1005 |         class WebGLManager implements LiquidEtherWebGL {
+  1006 |             props: any;
+
+                                                          react-hooks/unsupported-syntax
+  1005:9   warning  Compilation Skipped: Inline `class` declarations are not supported
+
+Move class declarations outside of components/hooks.
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\LiquidEther.tsx:1005:9
+  1003 |         }
+  1004 |
+> 1005 |         class WebGLManager implements LiquidEtherWebGL {
+       |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 1006 |             props: any;
+       | ^^^^^^^^^^^^^^^^^^^^^^^
+> 1007 |             output!: Output;
+       Γאª
+       | ^^^^^^^^^^^^^^^^^^^^^^^
+> 1087 |             }
+       | ^^^^^^^^^^^^^^^^^^^^^^^
+> 1088 |         }
+       | ^^^^^^^^^^ Inline `class` declarations are not supported
+  1089 |
+  1090 |         const container = mountRef.current;
+  1091 |         container.style.position = container.style.position || 'relative';
+
+  react-hooks/unsupported-syntax
+  1006:20  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+  1014:32  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+  1024:65  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-explicit-any
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\accordion.tsx
+  41:83  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\glare-card.tsx
+  40:10  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\navbar-menu.tsx
+    1:17  warning  'useRef' is defined but never used                                                                                                                                                                                                                                                       @typescript-eslint/no-unused-vars
+  107:17  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  125:52  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\components\ui\neon-gradient-card.tsx
+  25:20  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\page.tsx
+  9:10  warning  'LanguageProvider' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\niri\OneDrive\Desktop\╫₧╫í╫₧╫¢╫ש╫¥ ╫⌐╫£ ╫á╫ש╫¿╫ש\Projects\Product Managment\RegulationKit\regulationkit\app\products\[slug]\page.tsx
+  34:42  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  35:41  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+Γ£צ 72 problems (43 errors, 29 warnings)
+

@@ -21,20 +21,20 @@
 }
 
 :root {
-  /* Light Mode */
-  --background: #ffffff;
-  --foreground: #050E3C;
+  /* Light Mode - Flycart & Modern SaaS Inspired */
+  --background: #FFFFFF;
+  --foreground: #0F172A;
 
-  --card: rgba(255, 255, 255, 0.7);
-  --card-foreground: #050E3C;
+  --card: #FFFFFF;
+  --card-foreground: #0F172A;
 
-  --muted: #f1f5f9;
-  --muted-foreground: #64748b;
+  --muted: #F8FAFC;
+  --muted-foreground: #64748B;
 
-  --border: rgba(5, 14, 60, 0.1);
+  --border: #E2E8F0;
 
-  --glass-bg: rgba(255, 255, 255, 0.15);
-  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(15, 23, 42, 0.1);
 }
 
 .dark {
