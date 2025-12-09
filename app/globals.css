@@ -1,26 +1,224 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
+  /* RegulationKit Color Palette */
+  --color-primary: #050E3C;
+  --color-secondary: #002455;
+  --color-accent: #DC0000;
+  --color-accent-light: #FF3838;
+
+  /* Semantic Colors */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+
+  /* Font */
+  --font-sans: var(--font-rubik);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  /* Light Mode */
+  --background: #ffffff;
+  --foreground: #050E3C;
+
+  --card: rgba(255, 255, 255, 0.7);
+  --card-foreground: #050E3C;
+
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+
+  --border: rgba(5, 14, 60, 0.1);
+
+  --glass-bg: rgba(255, 255, 255, 0.15);
+  --glass-border: rgba(255, 255, 255, 0.2);
+}
+
+.dark {
+  /* Dark Mode */
+  --background: #050E3C;
+  --foreground: #f8fafc;
+
+  --card: rgba(0, 36, 85, 0.6);
+  --card-foreground: #f8fafc;
+
+  --muted: #002455;
+  --muted-foreground: #94a3b8;
+
+  --border: rgba(255, 255, 255, 0.1);
+
+  --glass-bg: rgba(0, 36, 85, 0.3);
+  --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* Base Styles */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-rubik), Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Glassmorphism Utilities */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+}
+
+.glass-card {
+  background: var(--card);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #DC0000 0%, #FF3838 50%, #DC0000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-primary {
+  background: linear-gradient(135deg, #050E3C 0%, #002455 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.dark .gradient-text-primary {
+  background: linear-gradient(135deg, #ffffff 0%, #e2e8f0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gradient Backgrounds */
+.gradient-primary {
+  background: linear-gradient(135deg, #050E3C 0%, #002455 100%);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #DC0000 0%, #FF3838 100%);
+}
+
+/* Animated Background Blobs */
+@keyframes blob {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  25% {
+    transform: translate(20px, -30px) scale(1.1);
+  }
+
+  50% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+
+  75% {
+    transform: translate(30px, 10px) scale(1.05);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.animate-blob {
+  animation: blob 8s infinite ease-in-out;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Float Animation */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s infinite ease-in-out;
+}
+
+/* Pulse Glow */
+@keyframes pulse-glow {
+
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(220, 0, 0, 0.3);
+  }
+
+  50% {
+    box-shadow: 0 0 40px rgba(220, 0, 0, 0.6);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s infinite ease-in-out;
+}
+
+/* Grid Pattern */
+.grid-pattern {
+  background-image:
+    linear-gradient(rgba(5, 14, 60, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(5, 14, 60, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.dark .grid-pattern {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #002455;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #050E3C;
+}
+
+/* Animations */
+@keyframes background-position-spin {
+  0% {
+    background-position: top center;
+  }
+
+  100% {
+    background-position: bottom center;
+  }
+}
+
+.animate-background-position-spin {
+  animation: background-position-spin 3000ms infinite alternate;
 }
