@@ -89,7 +89,7 @@ export function Hero() {
                         <Button size="xl" variant="outline" className="h-16 px-10 text-xl font-bold rounded-full glass border-border hover:bg-muted hover:scale-105 transition-all" asChild>
                             <Link href="#calculator">
                                 {content.hero.cta_secondary}
-                                {dir === 'rtl' ? <Play className="mr-3 h-6 w-6 fill-current" /> : <Play className="ml-3 h-6 w-6 fill-current rotate-180" />}
+                                {dir === 'rtl' ? <Play className="mr-3 h-6 w-6 fill-current" /> : <Play className="ml-3 h-6 w-6 fill-current" />}
                             </Link>
                         </Button>
                     </motion.div>
@@ -99,9 +99,9 @@ export function Hero() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.8 }}
-                        className="pt-16 flex flex-col items-center gap-4 w-full pointer-events-auto"
+                        className="pt-16 flex flex-col items-center gap-3 w-full pointer-events-auto"
                     >
-                        <div className="flex -space-x-4 space-x-reverse justify-center">
+                        <div className="flex -space-x-4 space-x-reverse justify-center pb-2">
                             {[1, 2, 3, 4].map((i) => (
                                 <div key={i} className="w-12 h-12 rounded-full border-4 border-background bg-muted flex items-center justify-center text-xs font-bold text-muted-foreground">
                                     User
@@ -111,13 +111,15 @@ export function Hero() {
                                 +2k
                             </div>
                         </div>
-                        <div className="flex items-center justify-center gap-2 text-base font-bold text-muted-foreground uppercase tracking-wider">
-                            <div className="flex">
-                                {[1, 2, 3, 4, 5].map((i) => (
-                                    <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
-                                ))}
-                            </div>
-                            <span className="mr-2">{content.hero.trust}</span>
+
+                        <span className="text-base font-bold text-muted-foreground uppercase tracking-wider text-center">
+                            {content.hero.trust}
+                        </span>
+
+                        <div className="flex items-center justify-center gap-1">
+                            {[1, 2, 3, 4, 5].map((i) => (
+                                <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
+                            ))}
                         </div>
                     </motion.div>
                 </div>
